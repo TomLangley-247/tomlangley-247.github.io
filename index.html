@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Muscle Meals</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Muscle Meals</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="description">
+            <img src="katie-smith-uQs1802D0CQ-unsplash.jpg" alt="Person working out" class="workout-image">
+            <div class="text">
+                <h2>Welcome to Muscle Meals</h2>
+                <p>
+                    We understand how challenging it can be to maintain a healthy, high-protein diet as a student. Balancing coursework, gym time, and a social life leaves little room for expensive, time-consuming meals. The struggle to stay on budget while making sure you’re getting enough protein to fuel your gym progress is real, and it can often feel overwhelming.
+                </p>
+                <p>
+                    That’s where <strong>Muscle Meals</strong> comes in! Our mission is simple: to help you achieve your fitness goals without breaking the bank. We provide a collection of easy-to-make, high-protein recipes that won’t stretch your wallet. Whether you’re looking to bulk up, lean out, or just maintain a healthy diet, we’ve got recipes that are budget-friendly and packed with the protein your muscles need.
+                </p>
+            </div>
+        </section>
+
+        
+        <section class="recipes">
+            <h2>Recipes</h2>
+
+            
+    <input type="text" id="search-bar" placeholder="Search recipes..." onkeyup="searchRecipes()">
+    <script>
+        function searchRecipes() {
+            
+            let input = document.getElementById('search-bar').value.toLowerCase();
+            
+            
+            let recipes = document.getElementsByClassName('recipe');
+            
+            
+            for (let i = 0; i < recipes.length; i++) {
+                if (recipes[i].innerText.toLowerCase().includes(input)) {
+                    recipes[i].style.display = "";  
+                } else {
+                    recipes[i].style.display = "none";  
+                }
+            }
+        }
+    </script>
+
+            
+            <article class="recipe">
+                <h3>High Protein Chicken Pasta</h3>
+
+                
+                <h4>Ingredients</h4>
+                <ul class="ingredients">
+                    <li>200g chicken breast (cooked and diced)</li>
+                    <li>150g whole wheat pasta</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>2 garlic cloves (minced)</li>
+                    <li>1/2 cup low-fat Greek yogurt</li>
+                    <li>1/4 cup grated Parmesan cheese</li>
+                    <li>1/2 cup spinach (fresh or frozen)</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+
+                
+                <h4>Instructions</h4>
+                <ol class="instructions">
+                    <li>Boil the pasta according to package instructions until al dente. Drain and set aside.</li>
+                    <li>While the pasta is cooking, heat olive oil in a pan over medium heat.</li>
+                    <li>Add the minced garlic and sauté for 1-2 minutes until fragrant.</li>
+                    <li>Add the cooked and diced chicken breast to the pan, stir to combine, and cook for another 2-3 minutes.</li>
+                    <li>Reduce the heat to low, then add the Greek yogurt and Parmesan cheese. Stir until the sauce becomes creamy.</li>
+                    <li>Add the spinach and stir until wilted (if using fresh) or heated through (if using frozen).</li>
+                    <li>Season with salt and pepper to taste.</li>
+                    <li>Add the cooked pasta to the pan and toss to coat evenly with the sauce.</li>
+                    <li>Serve hot and enjoy your high-protein chicken pasta!</li>
+                </ol>
+            </article>
+            
+            <article class="recipe">
+                <h3>High Protein Stir Fry</h3>
+
+                
+                <h4>Ingredients</h4>
+                <ul class="ingredients">
+                    <li>200g lean beef or chicken breast (sliced)</li>
+                    <li>1 tablespoon soy sauce (low-sodium)</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1 red bell pepper (sliced)</li>
+                    <li>1 green bell pepper (sliced)</li>
+                    <li>1 carrot (sliced)</li>
+                    <li>1 onion (sliced)</li>
+                    <li>2 cloves garlic (minced)</li>
+                    <li>1 tablespoon ginger (grated)</li>
+                    <li>1/2 cup broccoli florets</li>
+                    <li>2 tablespoons sesame seeds (optional)</li>
+                    <li>1 tablespoon sriracha or chili sauce (optional for heat)</li>
+                    <li>Cooked brown rice or quinoa for serving</li>
+                </ul>
+
+                
+                <h4>Instructions</h4>
+                <ol class="instructions">
+                    <li>Heat olive oil in a large pan or wok over medium-high heat.</li>
+                    <li>Add the sliced meat and cook for 4-5 minutes until browned. Remove from the pan and set aside.</li>
+                    <li>In the same pan, add the garlic and ginger. Sauté for 1-2 minutes until fragrant.</li>
+                    <li>Add the vegetables (bell peppers, carrot, onion, broccoli) and stir-fry for 3-4 minutes until they start to soften.</li>
+                    <li>Return the cooked meat to the pan and stir in the soy sauce, sriracha (optional), and sesame seeds (optional).</li>
+                    <li>Cook for another 2 minutes, stirring to combine everything.</li>
+                    <li>Serve hot over cooked brown rice or quinoa for a protein-packed meal.</li>
+                </ol>
+            </article>
+            
+            <article class="recipe">
+                <h3>High Protein Chili</h3>
+
+                
+                <h4>Ingredients</h4>
+                <ul class="ingredients">
+                    <li>500g diced chicken</li>
+                    <li>1 can black beans (drained and rinsed)</li>
+                    <li>1 can diced tomatoes (with juice)</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1 onion (chopped)</li>
+                    <li>2 cloves garlic (minced)</li>
+                    <li>2 tablespoons chili powder</li>
+                    <li>1 teaspoon cumin</li>
+                    <li>1 teaspoon paprika</li>
+                    <li>1/2 teaspoon cayenne pepper (optional)</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+
+                
+                <h4>Instructions</h4>
+                <ol class="instructions">
+                    <li>Heat olive oil in a large pot over medium heat.</li>
+                    <li>Add the chopped onion and minced garlic, and cook until softened (about 5 minutes).</li>
+                    <li>Add the ground chicken and cook until browned, breaking it up with a spoon as it cooks.</li>
+                    <li>Stir in the chili powder, cumin, paprika, cayenne pepper (if using), salt, and pepper.</li>
+                    <li>Add the diced tomatoes and black beans. Stir to combine.</li>
+                    <li>Reduce heat to low and simmer for 20-30 minutes, stirring occasionally.</li>
+                    <li>Serve hot with your choice of toppings like Greek yogurt, shredded cheese, or cilantro.</li>
+                </ol>
+            </article>
+
+            
+            <article class="recipe">
+                <h3>High Protein Greek Yogurt Smoothie</h3>
+
+                
+                <h4>Ingredients</h4>
+                <ul class="ingredients">
+                    <li>1 cup Greek yogurt (plain, non-fat)</li>
+                    <li>1/2 cup almond milk or any milk of choice</li>
+                    <li>1 scoop vanilla whey protein powder</li>
+                    <li>1 banana (sliced)</li>
+                    <li>1/2 cup frozen mixed berries</li>
+                    <li>1 tablespoon peanut butter (optional)</li>
+                    <li>Ice cubes (optional)</li>
+                </ul>
+
+                
+                <h4>Instructions</h4>
+                <ol class="instructions">
+                    <li>In a blender, combine the Greek yogurt, almond milk, protein powder, banana, berries, and peanut butter (if using).</li>
+                    <li>Blend on high until smooth and creamy.</li>
+                    <li>If you prefer a thicker smoothie, add ice cubes and blend again.</li>
+                    <li>Pour into a glass and enjoy your high-protein smoothie!</li>
+                </ol>
+            </article>
+
+        </section>
+       
+<section class="submit-recipe">
+    <h2>Submit Your Own Recipe</h2>
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type" name="meal-type" required>
+                <option value="">--Please choose an option--</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+
+       
+        <div class="form-group">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</section>
+    </main>
+
+</body>
+</html>
